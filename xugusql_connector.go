@@ -15,7 +15,7 @@ const (
 	ROWID_BUFF_SIZE        uint = 256
 	COLUMN_NAME_BUFF_SIZE  uint = 256
 
-	FIELD_BUFF_SIZE uint = 4096
+	FIELD_BUFF_SIZE uint = 40960
 	LOB_BUFF_SIZE   uint = 8
 	RET_NO_DATA     int  = 100
 
