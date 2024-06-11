@@ -154,7 +154,7 @@ func (self *parse) assertParamType(dV driver.Value, pos int) error {
 		}
 
 		dest.value = C.CString(srcv)
-		dest.length = C.int(strings.Count(srcv, "") - 1)
+		dest.length = C.int(len(srcv))
 		dest.buff = dest.length + 1
 		dest.islob = false
 		dest.types = SQL_XG_C_CHAR
